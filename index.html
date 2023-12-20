@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "Design platform" >
+		<meta name = "keywords" content = "Design, Mock-Up, Hollday."> 
+		<meta name = "author" content = "Nikita Ryzhkov">
+    <meta name = "source" content = "Visual Studio Code: HTML, CSS."> 
+    <meta name = "version" content = "1.0"> 
+        <title>Waxom</title>
+    <link rel="icon" href="logo/icon.png" type="image/icon">
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/loader.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <h2 class="info" title="information">Start_page</h2>
+  <section class="block_loader">
+    <h2 class="info" title="information">Loader_page</h2>
+    <div class="loader_scene">
+    <div class="loader">
+      <span>W</span>
+      <span>A</span>
+      <span>X</span>
+      <span>O</span>
+      <span>M</span>
+    </div>
+    </div>
+  </section>
+  <div class="page">
+    <div class="button_skroll">
+      <div class="skroll_button_wrap">
+        <div class="skroll_up"><a href="#header"></a></div>
+        <div class="skroll_down"><a href="#footer"></a></div>
+      </div>
+    </div>
+    <header id="header">
+      <aside class="bar_burger">
+        <div class="bar_menu2">
+          <input type="checkbox" id="burger_checkbox" class="burger_checkbox">
+          <label for="burger_checkbox" class="burger"></label>
+          <ul class="menu_list">
+              <li><a href="#header" id="first" class="menu_item">Home</a><li>
+              <li><a href="#panel1" class="menu_item">About Us</a><li>
+              <li><a href="#panel3" class="menu_item">Portfolio</a><li>
+              <li><a href="#panel5" class="menu_item">Features</a><li></li>
+              <li><a href="#panel4" class="menu_item">Blog</a><li>
+              <li><a href="#panel6" class="menu_item">Pricing</a><li>
+              <li><a href="#panel6" class="menu_item">Shortcodes</a><li>
+              <li><a href="#footer" id="last" class="menu_item">Contact</a><li></li>
+          </ul>
+        </div>
+        <div class="logo1"><img src="logo/icon.png" alt=""></div>
+        <a href="#panel6" class="button_zoom1"></a>
+      </aside>
+      <aside class="bar_wrap">
+        <div class="bar">
+          <div class="logo">
+            <img src="img/logo.png" alt="logo">
+          </div>
+          <div class="bar_menu">
+            <a href="#header" class="home">Home</a>
+            <a href="#panel1" class="about_us">About Us</a>
+            <a href="#panel3" class="portfolio">Portfolio</a>
+            <a href="#panel5" class="features">Features</a>
+            <a href="#panel4" class="blog">Blog</a>
+            <a href="#panel6" class="pricing">Pricing</a>
+            <a href="#panel6" class="shortcodes">Shortcodes</a>
+            <a href="#footer" class="contact">Contact</a>
+          </div>
+          <div class="bar_button">
+            <a href="#panel4" class="button_multimedia"></a>
+            <a href="#panel6" class="button_zoom"></a>
+          </div>
+        </div>
+      </aside>
+      <section class="text_header">
+        <div class="text_main">
+          <h1>Unique and Modern Design</h1>
+          <h2 >Portfolio PSD Template</h2>
+          <p>Nam liber tempor cum soluta nbis eleifend option congue nihil imper-</p>
+          <p>diet doming id quod mazim placerat facer possim assum.</p>
+          <div id="but1" class="panel_All_button">
+            <a class="button_top" href="#panel3">GET STARTED</a>
+            <a class="button_bottom" href="#panel3"></a>
+          </div>
+        </div>
+      </section>
+      <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+          <li id="carousel__slide1" class="carousel__slide">
+            <div class="carousel__snapper">
+              <a href="#carousel__slide4" class="carousel__prev">last slide</a>
+              <a href="#carousel__slide2" class="carousel__next">next slide</a>
+            </div>
+          </li>
+          <li id="carousel__slide2" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1" class="carousel__prev">previous slide</a>
+            <a href="#carousel__slide3" class="carousel__next">next slide</a>
+          </li>
+          <li id="carousel__slide3" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2" class="carousel__prev">previous slide</a>
+            <a href="#carousel__slide4" class="carousel__next">next slide</a>
+          </li>
+          <li id="carousel__slide4" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3" class="carousel__prev">previous slide</a>
+            <a href="#carousel__slide1" class="carousel__next">first slide</a>
+          </li>
+        </ol>
+        <aside class="carousel__navigation">
+          <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+            </li>
+          </ol>
+        </aside>
+      </section>    
+    </header>
+    <main>
+      <section id="panel1" class="panel1">
+        <div class="block_item1">
+          <div class="item1">
+            <img src="img/pencil_icon.svg" alt="">
+            <h1 class="h1_1">Web & App Design</h1>
+            <p class="p_1">Lorem ipsum dolor sit, amet consectetur</p>
+            <p class="p_1">adipisicing elit. Vero, accusamus, voluptas</p>
+            <p class="p_1">illo numquam ullam.</p>
+            <div class="line1"></div>
+          </div>
+          <div class="item1">
+            <img src="img/development_icon.svg" alt="">
+            <h1 class="h1_1">Development</h1>
+            <p class="p_1">Lorem ipsum dolor sit, amet consectetur</p>
+            <p class="p_1">adipisicing elit. Vero, accusamus, voluptas</p>
+            <p class="p_1">illo numquam ullam.</p>
+            <div class="line1"></div>
+          </div>
+          <div class="item1">
+            <img src="img/options_icon.svg" alt="">
+            <h1 class="h1_1">Customization</h1>
+            <p class="p_1">Lorem ipsum dolor sit, amet consectetur</p>
+            <p class="p_1">adipisicing elit. Vero, accusamus, voluptas</p>
+            <p class="p_1">illo numquam ullam.</p>
+            <div class="line1"></div>
+          </div>
+          <div class="item1">
+            <img src="img/folder_icon.svg" alt="">
+            <h1 class="h1_1">Marketing</h1>
+            <p class="p_1">Lorem ipsum dolor sit, amet consectetur</p>
+            <p class="p_1">adipisicing elit. Vero, accusamus, voluptas</p>
+            <p class="p_1">illo numquam ullam.</p>
+            <div class="line1"></div>
+          </div>
+        </div>
+      </section>
+      <section class="panel2">
+        <div class="block_1">
+          <h1 class="h1_2"><span class="colortext">Waxom </span>Multipurpose WordPress Theme</h1>
+          <p class="p_2">Don`t Forget to Rate the Template. Thanks so much!<p>
+        </div>
+        <div id="but2" class="panel_All_button">
+          <a class="button_top" href="#panel3">PURCHASE NOW</a>
+          <a class="button_bottom" href="#panel3"></a>
+        </div>
+      </section>
+      <section id="panel3" class="panel3">
+        <div class="top_panel3">
+          <h1 class="h1_3">Our Latest Projects.</h1>
+          <p class="p_3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <p class="p_3">Adipisci ipsam laudantium alias ad.</p>
+        </div>
+        <div class="panel_Gallery">
+          <a href="#panel3"  class="button_Gallery">All</a>
+          <a href="#panel3"  class="button_Gallery">Web Design</a>
+          <a href="#panel3"  class="button_Gallery">Mobile App</a>
+          <a href="#panel3"  class="button_Gallery">Illustration</a>
+          <a href="#panel7"  class="button_Gallery">Photography</a>
+        </div>
+        <div class="Gallery1">
+          <div class="block_Gallery">
+            <div class="item_Gallery">
+              <div class="item_button_block">
+                <a href="#panel3" class="button_item_chain"></a>
+                <a href="#panel3" class="button_item_zoom"></a>
+              </div>
+              <img src="img/phone1-450x340.jpg" alt="">
+              <div class="try"></div>
+              <div class="item_text">
+                <h1 class="h1_4">Claritas Etiam Processus</h1>
+                <p class="p_4">Photography, Nature</p>
+              </div>
+            </div>
+            <div class="item_Gallery">
+              <div class="item_button_block">
+                <a href="#panel3" class="button_item_chain"></a>
+                <a href="#panel3" class="button_item_zoom"></a>
+              </div>
+              <img src="img/rocks2-450x340.jpg" alt="">
+              <div class="try"></div>
+              <div class="item_text">
+                <h1 class="h1_4">Quam Nutamus Farum</h1>
+                <p class="p_4">Graphic Design, Mock-Up</p>
+              </div>
+            </div>
+            <div class="item_Gallery">
+              <div class="item_button_block">
+                <a href="#panel3" class="button_item_chain"></a>
+                <a href="#panel3" class="button_item_zoom"></a>
+              </div>
+              <img src="img/guy-450x340.jpg" alt="">
+              <div class="try"></div>
+              <div class="item_text">
+                <h1 class="h1_4">Usus Legentis Videntur</h1>
+                <p class="p_4">Photography, Hollday</p>
+              </div>
+            </div>
+            <div class="item_Gallery">
+              <div class="item_button_block">
+                <a href="#panel3"  class="button_item_chain"></a>
+                <a href="#panel3"  class="button_item_zoom"></a>
+              </div>
+              <img src="img/seagulls-450x340.jpg" alt="">
+              <div class="try"></div>
+              <div class="item_text">
+                <h1 class="h1_4">Claritas Etiam Processus</h1>
+                <p class="p_4">Photography, Nature</p>
+              </div>
+            </div>
+            <div class="item_Gallery">
+              <div class="item_button_block">
+                <a href="#panel3"  class="button_item_chain"></a>
+                <a href="#panel3"  class="button_item_zoom"></a>
+              </div>
+              <img src="img/magazine-450x340.jpg" alt="">
+              <div class="try"></div>
+              <div class="item_text">
+                <h1 class="h1_4">Quam Nutamus Farum</h1>
+                <p class="p_4">Graphic Design, Mock-Up</p>
+              </div>
+            </div>
+            <div class="item_Gallery">
+              <div class="item_button_block">
+                <a href="#panel3"  class="button_item_chain"></a>
+                <a href="#panel3"  class="button_item_zoom"></a>
+              </div>
+              <img src="img/rocks3-450x340.jpg" alt="">
+              <div class="try"></div>
+              <div class="item_text">
+                <h1 class="h1_4">Usus Legentis Videntur</h1>
+                <p class="p_4">Photography, Hollday</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section_button">
+          <div class="panel_All_button">
+            <a class="button_top" href="#panel7">LOAD MORE</a>
+            <a class="button_bottom" href="#panel7"></a>
+          </div>
+        </div>
+      </section>
+      <section id="panel4" class="panel4">
+        <h2 class="info" title="information">Video_player</h2>
+        <div class="wrap_video">
+          <div class="controls_video">
+            <div class="player_bg">
+              <div class="player_button"><a href="" class="img1"></a></div>
+            </div>
+            <h1 class="h1_5">Waxom Video Presentation</h1>
+            <p class="p_5">Investigationes demonstraverunt lectores legere me lius quid ii legunt</p>
+            <p class="p_5">sapius, qui sequitur mutationem consectetur.</p>
+            <div class="time_score">03:26</div>
+          </div>
+          <div class="inside_video">
+            <video poster="img/table-1920x893.webp" src="video/SampleVideo.mp4">
+              <source src="video/SampleVideo.mp4">
+              <source src="video/SampleVideo.ogg">
+              <source src="video/SampleVideo.ogm">
+              <source src="video/SampleVideo.ogv">
+              <source src="video/SampleVideo.webm">
+              Your browser doesn't support HTML5 video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+      <section id="panel5" class="panel5">
+        <div class="panel5_wrap">
+          <div class="phone"><img src="img/iphone.webp" alt=""></div>
+          <div class="phone_text">
+            <div class="text1">
+            <h1 class="h1_6">Excellent for Mobile Devices.</h1>
+            <p class="p_6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="p_6">Enim dolor, nihil rerum exercitationem fugit sapiente iusto,</p>
+            <p class="p_6">tenetur ipsum quam, corporis inventore non eius suscipit</p>
+            <p class="p_6">quisquam voluptatum nulla provident incidunt sequi?</p>
+            </div>
+            <div class="text2">
+              <div class="text2_icon">
+                <a href="" class="bg_icon"><div class="img2"></div></a>
+                <a href="" class="bg_icon"><div class="img2"></div></a>
+                <a href="" class="bg_icon"><div class="img2"></div></a>
+                <a href="" class="bg_icon"><div class="img2"></div></a>
+              </div>
+              <div class="txt2">
+                <p class="p_6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="p_6">Lorem ipsum dolor sit amet cons:</p>
+                <p class="p_6">Lorem, ipsum dolor sit amet consectetur adipis.</p>
+                <p class="p_6">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="panel6" class="panel6">
+        <div class="block_item2">
+          <div class="item2">
+            <img src="img/person.png" alt="">
+            <h1 class="h1_7">3587</h1>
+            <p class="p_7">SATISFIED CLIENTS</p>
+            <div class="line2"></div>
+          </div>
+          <div class="item2">
+            <img src="img/cup.png" alt="">
+            <h1 class="h1_7">207</h1>
+            <p class="p_7">CUPS OF COFFEE</p>
+            <div class="line2"></div>
+          </div>
+          <div class="item2">
+            <img src="img/chat.png" alt="">
+            <h1 class="h1_7">2500</h1>
+            <p class="p_7">BLOG POSTS</p>
+            <div class="line2"></div>
+          </div>
+          <div class="item2">
+            <img src="img/heart.png" alt="">
+            <h1 class="h1_7">873</h1>
+            <p class="p_7">LIKES</p>
+            <div class="line2"></div>
+          </div>
+          <div class="item2">
+            <img src="img/dish.png" alt="">
+            <h1 class="h1_7">900</h1>
+            <p class="p_7">WE LAUNCHED</p>
+            <div class="line2"></div>
+          </div>
+        </div>
+      </section>
+      <section id="panel7" class="panel7">
+        <div class="panel7_wrap">
+          <div class="panel7_text">
+            <h1 class="h1_8">Recent Posts</h1>
+            <p class="p_8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro ullam </p>
+            <p class="p_8">ut delectus praesentium odio magni repellat, asperiores.</p>
+          </div>
+          <div class="panel7_Gallery">
+            <div class="item_Gallery2">
+              <div class="item_button_block2">
+                <div class="kalen_top">30</div>
+                <div class="kalen_bottom">Sep.</div>
+              </div>
+              <img src="img/feet-880x470.jpg" alt="">
+              <div class="item_text2">
+                <h1 class="h1_9">Lorem ipsum dolor sit amet</h1>
+                <p class="p_9">Claritas est etlam processus dynamicus, qui</p>
+                <p class="p_9">sequitur mutationem consuetudium.</p>
+                <a href="#panel1" class="p_9">Read More ▶</a>
+              </div>
+            </div>
+            <div class="item_Gallery2">
+              <div class="item_button_block2">
+                <div class="kalen_top">30</div>
+                <div class="kalen_bottom">Sep.</div>
+              </div>
+              <img src="img/macbook.webp" alt="">
+              <div class="item_text2">
+                <h1 class="h1_9">Lorem ipsum dolor sit amet</h1>
+                <p class="p_9">Claritas est etlam processus dynamicus, qui</p>
+                <p class="p_9">sequitur mutationem consuetudium.</p>
+                <a href="#panel1" class="p_9">Read More ▶</a>
+              </div>
+            </div>
+            <div class="item_Gallery2">
+              <div class="item_button_block2">
+                <div class="kalen_top">30</div>
+                <div class="kalen_bottom">Sep.</div>
+              </div>
+              <img src="img/Cruise.webp" alt="">
+              <div class="item_text2">
+                <h1 class="h1_9">Lorem ipsum dolor sit amet</h1>
+                <p class="p_9">Claritas est etlam processus dynamicus, qui</p>
+                <p class="p_9">sequitur mutationem consuetudium.</p>
+                <a href="#panel1" class="p_9">Read More ▶</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel7_button">
+            <div class="button_panel7">
+              <a href="" class="bg_but"><div class="img3"></div></a>
+              <a href="" class="bg_but"><div class="img4"></div></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <section class="last">
+        <div class="fot_up">
+          <img class="fot_icon" src="img/foot.png" alt="">
+        </div>
+        <div class="fot_down">
+          <div class="text_fot1">
+            <p class="p_10">Copyright © 2024 <a href="#header" class="a_1">Waxom</a></p>
+            <p class="p_10"> | <a href="#panel1" class="a_2">Privacy Policy</a></p>
+            <p class="p_10"> | <a href="#panel4" class="a_3">FAQ</a></p>
+            <p class="p_10"> | <a href="#panel4" class="a_4">Support</a></p>
+          </div>
+          <div class="text_fot2">
+            <p class="p_10">Designed by <a href="" class="a_5">NoName</a></p>
+            <p class="p_10"> | Only on <a href="" class="a_6">NoName</a></p>
+          </div> 
+        </div>
+      </section>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* GENERAL STYLE */
+@keyframes skroll {
+    from{
+        overflow-y: hidden;
+    }
+    to{
+        overflow-y: overlay;
+    }
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-y: overlay;
+    overflow-x: hidden;
+    scrollbar-gutter:auto;
+    animation: skroll linear 8s forwards; 
+}
+main{
+    margin: 0;
+    width: 100vw;
+}
+/* BUTTON */
+.panel_All_button{
+    display: flex;
+    position: relative;
+    width: 170px;
+}
+.button_top{
+    display: flex;
+    position: absolute;
+    height: 45px;
+    width: 100%;
+    background-color: rgb(153, 134, 117);
+    border-radius:10px;
+    font-size: 17px;
+    font-family: Impact, fantasy;
+    color: white;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    user-select:none; 
+    text-decoration: none;
+}
+.button_bottom{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(115, 98, 88);
+    border-radius:10px;
+}
+.button_top:hover{
+    filter: brightness(0.9);
+    color: rgb(196, 179, 153);
+}
+.button_top:hover:active{
+    color: rgb(115, 98, 88);
+    height: 50px;
+    transition: 0.02s;
+}
+/* GENERAL SETTING */
+.info{
+    display: none;
+}
+* {
+    scroll-behavior:smooth;
+    box-sizing: border-box;
+    cursor: url('../cursor/cursor_icon.png'), url('../cursor/cursor_icon.svg'), auto;
+}
+::selection{
+    background-color: #7d7878;
+}
+/* SKROLL BAR */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+    background-color: rgba(217, 217, 217, 0);
+}
+  
+::-webkit-scrollbar-thumb,
+::-webkit-resizer {
+    background: rgba(84, 84, 84, 0.6);
+    border-radius: 5px;
+    border: none;
+}
+/* SKROLL UP,DOWN */
+.button_skroll{
+    position: sticky;
+    right: 10px;
+    top: calc(100vh - 120px);
+    z-index: 2;
+}
+.skroll_button_wrap{
+    display: flex;
+    position: absolute;
+    right: 10px;
+    height: 110px;
+    width: 50px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 10px;
+}
+.skroll_up, .skroll_down{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px gray solid;
+    background-color: white;
+    transition: 0.5s;
+}
+.skroll_up:hover, .skroll_down:hover{
+    background-color: #a4a39f;
+}
+.skroll_up a, .skroll_down a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(../img/down_arrow_icon.svg);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.skroll_up a{
+    background-image: url(../img/up_arrow_icon.svg);
+}
+.skroll_up a:hover{
+    background-image: url(../img/up_arrow_icon1.svg);
+}
+.skroll_down a:hover{
+    background-image: url(../img/down_arrow_icon1.svg);
+}
+
+

@@ -1,0 +1,84 @@
+@keyframes vis{
+    from{
+      display: contents;
+    }
+    to{
+      display: none;
+    }
+  }
+  @keyframes bounce{
+    0%, 20%, 50%, 80%, 100%{
+      transform: translateY(0);
+    }
+    40%{
+      transform: translateY(-50px);
+    }
+    60%{
+      transform: translateY(-25px);
+    }
+  }
+.block_loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: vis 4s forwards;
+  }
+  .loader_scene{
+    display: flex;
+    position: sticky;
+    z-index: 1001;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url(../img/leio-mclaren.webp);
+    filter: contrast(120%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader{
+    font-size: 40px;
+    font-weight: bold;
+    display: inline;
+    font-family: bebas neue;
+    z-index: 1002;
+    animation: vis 4s forwards;
+  }
+  .loader span{
+    z-index: 1003;
+    display: inline-block;
+    color: rgb(115, 98, 88); 
+    animation: vis,bounce 1.5s alternate forwards;
+    animation-iteration-count: 2;
+  }
+  .loader span:nth-child(2){
+    color: rgb(84, 84, 84);
+    animation-delay: 0.1s;
+  }
+  .loader span:nth-child(3){
+    color: rgb(139, 139, 139);
+    animation-delay: 0.2s;
+  }
+  .loader span:nth-child(4){
+    color: rgb(115, 98, 88);
+    animation-delay: 0.3s;
+  }
+  .loader span:nth-child(5){
+    color: rgb(84, 84, 84);
+    animation-delay: 0.4s;
+  }
+/* ADAPTATION */
+@media (min-width: 100px) and (max-width: 1180px){
+  .loader_scene{
+    background-size: auto 100%;
+  }
+}

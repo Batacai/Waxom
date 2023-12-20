@@ -1,0 +1,96 @@
+footer{
+    height: 580px;
+    width: 100%;
+}
+.fot_up{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+    width: 100%;
+    filter: brightness(0.8);
+    background-image: url(../img/jerry.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.fot_icon{
+    width: 1100px;
+    height: 210px;
+}
+.fot_down{
+    display: flex;
+    height: 100px;
+    background-color: #111111;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    gap: 450px;
+}
+.text_fot1, .text_fot2{
+    display: flex;
+    margin-top: 35px;
+}
+.p_10{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    color: #555555;
+    font-weight: 600;
+    user-select:auto;
+}
+.p_10 a{
+    transition: 0.5s;
+    text-decoration: none;
+}
+.a_2, .a_3, .a_4{
+    color: #555555;
+}
+.a_1, .a_5, .a_6{
+    color: #959595;
+}
+.a_1:hover, .a_5:hover, .a_6:hover{
+    color: #c7b199;
+    text-decoration: underline;
+}
+.a_2:hover, .a_3:hover, .a_4:hover{
+    color: #c7b199;
+}
+/* ADAPTATION */
+@media (min-width: 100px) and (max-width: 1180px){
+    .fot_icon{
+        display: flex;
+        width: 90%;
+        height: 40%;
+    }
+    .fot_down{
+        gap: 190px;
+    }
+  }
+@media (min-width: 100px) and (max-width: 929px){
+    .fot_down{
+        height: 10vh;
+        gap: 10px
+    }
+    .fot_down a, .p_10{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .text_fot1, .text_fot2{
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    #footer{
+        height: auto;
+    }
+    .fot_up,.fot_icon{
+        background-size: cover;
+        height: auto;
+    }
+    .fot_icon{
+        width: 100vw;
+        height: auto;
+    }
+    .p_10{
+        margin-bottom: 0;
+    }
+}
